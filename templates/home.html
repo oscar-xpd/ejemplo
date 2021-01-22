@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <section class="section-1">
+        <div id="header-1">
+            <h1>Hola, mi nombre es</h1>
+        </div>
+        <div id="header-2">
+            <h1>Oscar Garcìa</h1>
+        </div>
+        <div>
+            <p>Soy Ingeniero en Sistemas Computacionales, me especilizo en aplicaciones web así como en el desarrollo de 
+                sistemas de producción (autómotriz) y CRM.</p>
+            <p>Cuento con mas de 4 años de experiencia laboral desempañandome como Desarrollador Web Full Stack, he colaborado en distintos proyectos
+                desde el sector público hasta sector privado.
+            </p>
+            <p>
+                He participado en el Desarrollo de sistemas empresariales con Programación Front-End usando <strong>HTML 5</strong>, <strong>Javascript</strong>,
+                <strong>jQuery</strong>,<strong>CSS</strong>, <strong>Bootstrap</strong>, manejo de base de datos con <strong>MySQL</strong>, 
+            <strong>Oracle</strong>, programación en <strong>C#</strong>, <strong>Oracle Apex</strong>, <strong>PHP</strong>, utilizando el modelo
+            <strong>MVC</strong>, framework como <strong>CodeIgniter</strong> y <strong>Yii Framework.</strong>
+            </p>
+            <p>
+                He participado en las diferentes fases que conformanel ciclo de desarrollo web: diseño, desarrollo, seguimiento de pruebas, implementación de los nuevos módulos
+                a producción y soporte Post-Implementación.
+            </p>
+            <p>
+                Me intereso en el desarrollo de aplicaciones web, aplicaciones con acceso a datos, donde pueda desarrollar mi capacidad de análisis y desempeñar labores
+                que me permitan seguir creciendo en las áreas anteriormente mencionadas.
+            </p>
+        </div>
+    </section>
+    <section id="about" class="section-about">
+        <h2 class="number-head">Acerde de mì </h2>
+        <div class="sec-about">
+            <div class="about-style">
+                <div>
+                    <p>
+                        Mi nombre es Oscar Andrés García Alquisiras, tengo 29 años de edad. Egresado del Instituto Tecnológico de Acapulco como 
+                        Ingeniero en Sistemas Computacionales.
+                    </p>
+                    <p>
+                        Me gusta afrontar nuevos retos, que me permitan desarrollar mis capacidades analíticas y lógicas, me apasiona el crear  nuevas aplicaciones,
+                        sistemas de desarrollo web utilizando las herramientas tecnólogicas actuales en el mercado laboral.
+                    </p>
+                    <p>
+                        Me considero una persona disciplinada, autodidacta, capaz de aprender y aplicar nuevas tecnologías en el desarrollo web, me adapoto al trabajo en equipo, asi como
+                        implementar desarrollos de manera individual.
+                    </p>
+                    <p>
+                        Mis valores mas representativos son la resposabilidad, lealtad, compromiso, apasinado de mi profesión.
+                    </p>
+                </div>
+
+            </div>
+            <div class="about-img">
+                <div class="shadow">
+                    <div class="img img-shadow" style="position:relative; overflow:hidden">
+                        <div aria-hidden="true" style="width:100%; padding-bottom: 100%;">
+                            <img aria-hidden="true" src="{{ url_for('static', filename='img/oscar.jpg')}}" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; transition-delay: 500ms;">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="experiencia" class="section-exp">
+        <h2 class="number-head" id="exp">Experiencia</h2>
+        <div class="sec-exp">
+            <ul role="tablist" aria-label="Jobs tabs" class="jobs_style gtn">
+                <li><button id="bnt-0" aria-selected="true" aria-controls="panel-0" tabindex="0" class="jobs_style btn-audi"><span>Audi Mèxico</span></button> </li>
+                <li><button id="bnt-1" aria-selected="true" aria-controls="panel-1" tabindex="-1" class="jobs_style btn-xpd"><span>XPD</span></button></li>
+                <li><button id="bnt-2" aria-selected="true" aria-controls="panel-2" tabindex="-1" class="jobs_style btn-sach"><span>SACH Office Hosting</span></button></li>
+                <li><button id="bnt-3" aria-selected="true" aria-controls="panel-3" tabindex="-1" class="jobs_style btn-casa"><span>La casa de Cementin</span></li>
+                <li><button id="bnt-4" aria-selected="true" aria-controls="panel-4" tabindex="-1" class="jobs_style btn-cuoe"><span>CUOE Electromecanica y Servicios S.A. de C.V.</span></li>
+
+
+            </ul>
+            <div class="exp-style">
+
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="section-contacto">
+        <h2 class="number-head" id="cont">Contacto</h2>
+        <div class="sec-contacto">
+            <div class="row">
+                <div class="col-sm-5">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;(52) 5580500899</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;oscargaralq@gmail.com</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+{% endblock%}
